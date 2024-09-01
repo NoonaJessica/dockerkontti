@@ -1,9 +1,9 @@
 # Assignment - First images and containers with Docker
 
-I'm using an example server from the User-centric Application Develoment course. To check that it works locally, I ran the commands `npm i` and `npm run dev`. After confirming it works, I initialized Docker using the `docker init` command.
+Käytän esimerkkipalvelinta Käyttäjäkeskeinen sovelluskehitys -kurssilta. Tarkistaakseni, että se toimii paikallisesti, suoritin komennot npm i ja npm run dev. Vahvistettuani, että se toimii, alustasin Dockerin komennolla docker init.
 
-I reviewed the Dockerfile and added the watch configuration to the `compose.yaml` file. I also changed the host address to `0.0.0.0` in the `index.js` file.
+Kävin läpi Dockerfile-tiedoston ja lisäsin watch-konfiguraation compose.yaml-tiedostoon. Muutin myös isäntäosoitteen index.js-tiedostossa osoitteeseen 0.0.0.0.
 
-I added Mongo functionality by first running the command `$env:MONGODB_VERSION="6.0-ubi8"` and then `docker run --name mongodb -d mongodb/mongodb-community-server:$env:MONGODB_VERSION`. I also added Mongo to the `compose.yaml` file.
+Lisäsin Mongo-toiminnallisuuden suorittamalla ensin komennon $env:MONGODB_VERSION="6.0-ubi8" ja sitten docker run --name mongodb -d mongodb/mongodb-community-server:$env:MONGODB_VERSION. Lisäsin myös Mongon compose.yaml-tiedostoon.
 
-Finally, I used the command `docker compose up --build` to build the application. Unfortunately, it doesn't work under Docker.
+Lopuksi käytin komentoa docker compose up --build sovelluksen rakentamiseen mutta se ei toimi Dockerin kanssa.
